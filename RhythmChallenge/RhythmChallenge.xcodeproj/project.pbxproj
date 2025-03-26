@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D01C8152B9F1A2500F3D1C5 /* RhythmChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C8142B9F1A2500F3D1C5 /* RhythmChallengeApp.swift */; };
+		5D01C81C2B9F1A2600F3D1C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D01C81B2B9F1A2600F3D1C5 /* Preview Assets.xcassets */; };
+		5D01C8232B9F1A9200F3D1C5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C8222B9F1A9200F3D1C5 /* MainView.swift */; };
+		5D01C8252B9F1AA000F3D1C5 /* MetronomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C8242B9F1AA000F3D1C5 /* MetronomeView.swift */; };
+		5D01C8272B9F1AAA00F3D1C5 /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C8262B9F1AAA00F3D1C5 /* TrainingView.swift */; };
+		5D01C8292B9F1AB600F3D1C5 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C8282B9F1AB600F3D1C5 /* ResultsView.swift */; };
+		5D01C82B2B9F1AC100F3D1C5 /* BPMControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C82A2B9F1AC100F3D1C5 /* BPMControlView.swift */; };
+		5D01C82D2B9F1ACE00F3D1C5 /* PatternDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C82C2B9F1ACE00F3D1C5 /* PatternDisplayView.swift */; };
+		5D01C82F2B9F1AD900F3D1C5 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C82E2B9F1AD900F3D1C5 /* CountdownView.swift */; };
+		5D01C8312B9F1AE400F3D1C5 /* MetronomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C8302B9F1AE400F3D1C5 /* MetronomeViewModel.swift */; };
+		5D01C8332B9F1AF000F3D1C5 /* RhythmTrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C8322B9F1AF000F3D1C5 /* RhythmTrainingViewModel.swift */; };
+		5D01C8352B9F1AFB00F3D1C5 /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C8342B9F1AFB00F3D1C5 /* ResultsViewModel.swift */; };
+		5D01C8372B9F1B0A00F3D1C5 /* RhythmPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C8362B9F1B0A00F3D1C5 /* RhythmPattern.swift */; };
+		5D01C8392B9F1B1600F3D1C5 /* TrainingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C8382B9F1B1600F3D1C5 /* TrainingResult.swift */; };
+		5D01C83B2B9F1B2100F3D1C5 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C83A2B9F1B2100F3D1C5 /* Settings.swift */; };
+		5D01C83D2B9F1B2E00F3D1C5 /* MetronomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C83C2B9F1B2E00F3D1C5 /* MetronomeService.swift */; };
+		5D01C83F2B9F1B3A00F3D1C5 /* AudioCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C83E2B9F1B3A00F3D1C5 /* AudioCaptureService.swift */; };
+		5D01C8412B9F1B4700F3D1C5 /* SpectralAnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C8402B9F1B4700F3D1C5 /* SpectralAnalysisService.swift */; };
+		5D01C8432B9F1B5400F3D1C5 /* HapticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C8422B9F1B5400F3D1C5 /* HapticsService.swift */; };
+		5D01C8452B9F1B5F00F3D1C5 /* TimingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C8442B9F1B5F00F3D1C5 /* TimingService.swift */; };
+		5D01C8472B9F1B6A00F3D1C5 /* AudioAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C8462B9F1B6A00F3D1C5 /* AudioAnalyzer.swift */; };
+		5D01C8492B9F1B7600F3D1C5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01C8482B9F1B7600F3D1C5 /* Constants.swift */; };
+		5D01C84B2B9F1BEF00F3D1C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D01C84A2B9F1BEF00F3D1C5 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D01C8112B9F1A2500F3D1C5 /* RhythmChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RhythmChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D01C8142B9F1A2500F3D1C5 /* RhythmChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmChallengeApp.swift; sourceTree = "<group>"; };
+		5D01C81B2B9F1A2600F3D1C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5D01C8222B9F1A9200F3D1C5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5D01C8242B9F1AA000F3D1C5 /* MetronomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeView.swift; sourceTree = "<group>"; };
+		5D01C8262B9F1AAA00F3D1C5 /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
+		5D01C8282B9F1AB600F3D1C5 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		5D01C82A2B9F1AC100F3D1C5 /* BPMControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPMControlView.swift; sourceTree = "<group>"; };
+		5D01C82C2B9F1ACE00F3D1C5 /* PatternDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternDisplayView.swift; sourceTree = "<group>"; };
+		5D01C82E2B9F1AD900F3D1C5 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		5D01C8302B9F1AE400F3D1C5 /* MetronomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewModel.swift; sourceTree = "<group>"; };
+		5D01C8322B9F1AF000F3D1C5 /* RhythmTrainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmTrainingViewModel.swift; sourceTree = "<group>"; };
+		5D01C8342B9F1AFB00F3D1C5 /* ResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
+		5D01C8362B9F1B0A00F3D1C5 /* RhythmPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmPattern.swift; sourceTree = "<group>"; };
+		5D01C8382B9F1B1600F3D1C5 /* TrainingResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingResult.swift; sourceTree = "<group>"; };
+		5D01C83A2B9F1B2100F3D1C5 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		5D01C83C2B9F1B2E00F3D1C5 /* MetronomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeService.swift; sourceTree = "<group>"; };
+		5D01C83E2B9F1B3A00F3D1C5 /* AudioCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCaptureService.swift; sourceTree = "<group>"; };
+		5D01C8402B9F1B4700F3D1C5 /* SpectralAnalysisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectralAnalysisService.swift; sourceTree = "<group>"; };
+		5D01C8422B9F1B5400F3D1C5 /* HapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsService.swift; sourceTree = "<group>"; };
+		5D01C8442B9F1B5F00F3D1C5 /* TimingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingService.swift; sourceTree = "<group>"; };
+		5D01C8462B9F1B6A00F3D1C5 /* AudioAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAnalyzer.swift; sourceTree = "<group>"; };
+		5D01C8482B9F1B7600F3D1C5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5D01C84A2B9F1BEF00F3D1C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D01C84C2B9F1E4F00F3D1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D01C80E2B9F1A2500F3D1C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D01C8082B9F1A2500F3D1C5 = {
+			isa = PBXGroup;
+			children = (
+				5D01C8132B9F1A2500F3D1C5 /* RhythmChallenge */,
+				5D01C8122B9F1A2500F3D1C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D01C8122B9F1A2500F3D1C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D01C8112B9F1A2500F3D1C5 /* RhythmChallenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D01C8132B9F1A2500F3D1C5 /* RhythmChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				5D01C84C2B9F1E4F00F3D1C5 /* Info.plist */,
+				5D01C84D2B9F1F2E00F3D1C5 /* App */,
+				5D01C84E2B9F1F3500F3D1C5 /* Models */,
+				5D01C84F2B9F1F3D00F3D1C5 /* ViewModels */,
+				5D01C8502B9F1F4400F3D1C5 /* Views */,
+				5D01C8522B9F1F5400F3D1C5 /* Services */,
+				5D01C8532B9F1F5B00F3D1C5 /* Utils */,
+				5D01C84A2B9F1BEF00F3D1C5 /* Assets.xcassets */,
+				5D01C81A2B9F1A2600F3D1C5 /* Preview Content */,
+			);
+			path = RhythmChallenge;
+			sourceTree = "<group>";
+		};
+		5D01C81A2B9F1A2600F3D1C5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5D01C81B2B9F1A2600F3D1C5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5D01C84D2B9F1F2E00F3D1C5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5D01C8142B9F1A2500F3D1C5 /* RhythmChallengeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5D01C84E2B9F1F3500F3D1C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5D01C8362B9F1B0A00F3D1C5 /* RhythmPattern.swift */,
+				5D01C8382B9F1B1600F3D1C5 /* TrainingResult.swift */,
+				5D01C83A2B9F1B2100F3D1C5 /* Settings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5D01C84F2B9F1F3D00F3D1C5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5D01C8302B9F1AE400F3D1C5 /* MetronomeViewModel.swift */,
+				5D01C8322B9F1AF000F3D1C5 /* RhythmTrainingViewModel.swift */,
+				5D01C8342B9F1AFB00F3D1C5 /* ResultsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5D01C8502B9F1F4400F3D1C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D01C8222B9F1A9200F3D1C5 /* MainView.swift */,
+				5D01C8242B9F1AA000F3D1C5 /* MetronomeView.swift */,
+				5D01C8262B9F1AAA00F3D1C5 /* TrainingView.swift */,
+				5D01C8282B9F1AB600F3D1C5 /* ResultsView.swift */,
+				5D01C8512B9F1F4A00F3D1C5 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5D01C8512B9F1F4A00F3D1C5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5D01C82A2B9F1AC100F3D1C5 /* BPMControlView.swift */,
+				5D01C82C2B9F1ACE00F3D1C5 /* PatternDisplayView.swift */,
+				5D01C82E2B9F1AD900F3D1C5 /* CountdownView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5D01C8522B9F1F5400F3D1C5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5D01C83C2B9F1B2E00F3D1C5 /* MetronomeService.swift */,
+				5D01C83E2B9F1B3A00F3D1C5 /* AudioCaptureService.swift */,
+				5D01C8402B9F1B4700F3D1C5 /* SpectralAnalysisService.swift */,
+				5D01C8422B9F1B5400F3D1C5 /* HapticsService.swift */,
+				5D01C8442B9F1B5F00F3D1C5 /* TimingService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5D01C8532B9F1F5B00F3D1C5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5D01C8462B9F1B6A00F3D1C5 /* AudioAnalyzer.swift */,
+				5D01C8482B9F1B7600F3D1C5 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D01C8102B9F1A2500F3D1C5 /* RhythmChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D01C81F2B9F1A2600F3D1C5 /* Build configuration list for PBXNativeTarget "RhythmChallenge" */;
+			buildPhases = (
+				5D01C80D2B9F1A2500F3D1C5 /* Sources */,
+				5D01C80E2B9F1A2500F3D1C5 /* Frameworks */,
+				5D01C80F2B9F1A2500F3D1C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RhythmChallenge;
+			productName = RhythmChallenge;
+			productReference = 5D01C8112B9F1A2500F3D1C5 /* RhythmChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D01C8092B9F1A2500F3D1C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					5D01C8102B9F1A2500F3D1C5 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 5D01C80C2B9F1A2500F3D1C5 /* Build configuration list for PBXProject "RhythmChallenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D01C8082B9F1A2500F3D1C5;
+			productRefGroup = 5D01C8122B9F1A2500F3D1C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D01C8102B9F1A2500F3D1C5 /* RhythmChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D01C80F2B9F1A2500F3D1C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D01C81C2B9F1A2600F3D1C5 /* Preview Assets.xcassets in Resources */,
+				5D01C84B2B9F1BEF00F3D1C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D01C80D2B9F1A2500F3D1C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D01C8252B9F1AA000F3D1C5 /* MetronomeView.swift in Sources */,
+				5D01C8332B9F1AF000F3D1C5 /* RhythmTrainingViewModel.swift in Sources */,
+				5D01C8472B9F1B6A00F3D1C5 /* AudioAnalyzer.swift in Sources */,
+				5D01C8352B9F1AFB00F3D1C5 /* ResultsViewModel.swift in Sources */,
+				5D01C8312B9F1AE400F3D1C5 /* MetronomeViewModel.swift in Sources */,
+				5D01C83D2B9F1B2E00F3D1C5 /* MetronomeService.swift in Sources */,
+				5D01C82B2B9F1AC100F3D1C5 /* BPMControlView.swift in Sources */,
+				5D01C83F2B9F1B3A00F3D1C5 /* AudioCaptureService.swift in Sources */,
+				5D01C8272B9F1AAA00F3D1C5 /* TrainingView.swift in Sources */,
+				5D01C8232B9F1A9200F3D1C5 /* MainView.swift in Sources */,
+				5D01C82F2B9F1AD900F3D1C5 /* CountdownView.swift in Sources */,
+				5D01C8292B9F1AB600F3D1C5 /* ResultsView.swift in Sources */,
+				5D01C8412B9F1B4700F3D1C5 /* SpectralAnalysisService.swift in Sources */,
+				5D01C8152B9F1A2500F3D1C5 /* RhythmChallengeApp.swift in Sources */,
+				5D01C8392B9F1B1600F3D1C5 /* TrainingResult.swift in Sources */,
+				5D01C8372B9F1B0A00F3D1C5 /* RhythmPattern.swift in Sources */,
+				5D01C8432B9F1B5400F3D1C5 /* HapticsService.swift in Sources */,
+				5D01C83B2B9F1B2100F3D1C5 /* Settings.swift in Sources */,
+				5D01C8452B9F1B5F00F3D1C5 /* TimingService.swift in Sources */,
+				5D01C82D2B9F1ACE00F3D1C5 /* PatternDisplayView.swift in Sources */,
+				5D01C8492B9F1B7600F3D1C5 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5D01C81D2B9F1A2600F3D1C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D01C81E2B9F1A2600F3D1C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D01C8202B9F1A2600F3D1C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RhythmChallenge/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RhythmChallenge/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Приложению нужен доступ к микрофону для записи и анализа звука вашего инструмента.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RhythmChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D01C8212B9F1A2600F3D1C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RhythmChallenge/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RhythmChallenge/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Приложению нужен доступ к микрофону для записи и анализа звука вашего инструмента.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RhythmChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D01C80C2B9F1A2500F3D1C5 /* Build configuration list for PBXProject "RhythmChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D01C81D2B9F1A2600F3D1C5 /* Debug */,
+				5D01C81E2B9F1A2600F3D1C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D01C81F2B9F1A2600F3D1C5 /* Build configuration list for PBXNativeTarget "RhythmChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D01C8202B9F1A2600F3D1C5 /* Debug */,
+				5D01C8212B9F1A2600F3D1C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D01C8092B9F1A2500F3D1C5 /* Project object */;
+}
