@@ -32,7 +32,6 @@ task = "packager.installForAll"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "cd RhythmChallenge && swift App/RhythmChallengeApp.swift"
-waitForPort = 5000
 
 [[workflows.workflow]]
 name = "run_ios_app"

@@ -1,28 +1,38 @@
 import SwiftUI
 
 struct MainView: View {
-    @StateObject private var metronomeViewModel = MetronomeViewModel()
-    @StateObject private var trainingViewModel = RhythmTrainingViewModel()
-    @StateObject private var resultsViewModel = ResultsViewModel()
+    @EnvironmentObject var metronomeViewModel: MetronomeViewModel
+    @EnvironmentObject var rhythmTrainingViewModel: RhythmTrainingViewModel
+    @EnvironmentObject var resultsViewModel: ResultsViewModel
     
     var body: some View {
         TabView {
             MetronomeView(viewModel: metronomeViewModel)
                 .tabItem {
-                    Label("Metronome", systemImage: "metronome")
+                    Label("Метроном", systemImage: "metronome")
                 }
             
-            TrainingView(viewModel: trainingViewModel)
+            TrainingView(viewModel: rhythmTrainingViewModel)
                 .tabItem {
-                    Label("Training", systemImage: "waveform")
+                    Label("Тренировка", systemImage: "waveform")
                 }
             
             ResultsView(viewModel: resultsViewModel)
                 .tabItem {
-                    Label("Results", systemImage: "chart.bar")
+                    Label("Результаты", systemImage: "chart.bar")
                 }
         }
         .accentColor(AppColor.accent)
         .preferredColorScheme(.dark)
+    }
+}
+
+// SwiftUI Preview
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView()
+            .environmentObject(MetronomeViewModel())
+            .environmentObject(RhythmTrainingViewModel())
+            .environmentObject(ResultsViewModel())
     }
 }
