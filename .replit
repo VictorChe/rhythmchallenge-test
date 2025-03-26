@@ -1,0 +1,52 @@
+modules = ["swift"]
+
+[nix]
+channel = "stable-24_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "RhythmChallenge-Runner"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "run_ios_app"
+
+[[workflows.workflow]]
+name = "RhythmChallenge-Runner"
+author = "agent"
+
+[workflows.workflow.metadata]
+agentRequireRestartOnSave = false
+
+[[workflows.workflow.tasks]]
+task = "packager.installForAll"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd RhythmChallenge && swift App/RhythmChallengeApp.swift"
+waitForPort = 5000
+
+[[workflows.workflow]]
+name = "run_ios_app"
+author = "agent"
+
+[workflows.workflow.metadata]
+agentRequireRestartOnSave = false
+
+[[workflows.workflow.tasks]]
+task = "packager.installForAll"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd RhythmChallenge && xcodebuild -scheme RhythmChallenge -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.0' -allowProvisioningUpdates && open -a Simulator"
+
+[deployment]
+run = ["sh", "-c", "cd RhythmChallenge && swift App/RhythmChallengeApp.swift"]
